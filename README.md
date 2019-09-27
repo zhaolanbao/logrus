@@ -1,4 +1,4 @@
-# Logrus <img src="http://i.imgur.com/hTeVwmJ.png" width="40" height="40" alt=":walrus:" class="emoji" title=":walrus:"/>&nbsp;[![Build Status](https://travis-ci.org/sirupsen/logrus.svg?branch=master)](https://travis-ci.org/sirupsen/logrus)&nbsp;[![GoDoc](https://godoc.org/github.com/zhaolanbao/logrus?status.svg)](https://godoc.org/github.com/zhaolanbao/logrus)
+# Logrus <img src="http://i.imgur.com/hTeVwmJ.png" width="40" height="40" alt=":walrus:" class="emoji" title=":walrus:"/>&nbsp;[![Build Status](https://travis-ci.org/zhaolanbao/logrus.svg?branch=master)](https://travis-ci.org/zhaolanbao/logrus)&nbsp;[![GoDoc](https://godoc.org/github.com/zhaolanbao/logrus?status.svg)](https://godoc.org/github.com/zhaolanbao/logrus)
 
 Logrus is a structured logger for Go (golang), completely API compatible with
 the standard library logger.
@@ -70,12 +70,12 @@ log.SetReportCaller(true)
 This adds the caller as 'method' like so:
 
 ```json
-{"animal":"penguin","level":"fatal","method":"github.com/sirupsen/arcticcreatures.migrate","msg":"a penguin swims by",
+{"animal":"penguin","level":"fatal","method":"github.com/zhaolanbao/arcticcreatures.migrate","msg":"a penguin swims by",
 "time":"2014-03-10 19:57:38.562543129 -0400 EDT"}
 ```
 
 ```text
-time="2015-03-26T01:27:38-04:00" level=fatal method=github.com/sirupsen/arcticcreatures.migrate msg="a penguin swims by" animal=penguin
+time="2015-03-26T01:27:38-04:00" level=fatal method=github.com/zhaolanbao/arcticcreatures.migrate msg="a penguin swims by" animal=penguin
 ```
 Note that this does add measurable overhead - the cost will depend on the version of Go, but is
 between 20 and 40% in recent tests with 1.6 and 1.7.  You can validate this in your
